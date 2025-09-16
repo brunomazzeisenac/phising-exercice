@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Treinamento — Phishing (Resumo ilustrado)</title>
+  <style>
+    :root{--bg:#f4f7fb;--card:#ffffff;--accent:#0b7;--muted:#6b7280;--danger:#b02a2a}
+    body{font-family:Inter, system-ui, -apple-system, Arial, Helvetica, sans-serif;background:var(--bg);margin:0;color:#0f172a}
+    .wrap{max-width:960px;margin:36px auto;padding:20px}
+    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 8px 30px rgba(15,23,42,0.06)}
+    header{display:flex;gap:18px;align-items:center}
+    .badge{background:linear-gradient(90deg,#e6ffef,#d1f7e8);color:#05512b;padding:8px 12px;border-radius:999px;font-weight:700;font-size:14px}
+    h1{margin:0;font-size:22px}
+    p.lead{color:var(--muted);margin:8px 0 18px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .panel{background:#fbfdff;padding:14px;border-radius:10px}
+    .signals{display:flex;flex-direction:column;gap:8px}
+    .signal{display:flex;gap:10px;align-items:flex-start;background:#fff;padding:10px;border-radius:8px;border:1px solid #eef2f7}
+    .signal strong{display:block}
+    .ok{color:var(--accent);font-weight:700}
+    .warn{color:var(--danger);font-weight:700}
+    ul.check{padding-left:18px;margin:8px 0}
+    .actions{display:flex;gap:10px;margin-top:12px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn.secondary{background:#fff;border:1px solid #e6eef2;color:#0b1726}
+    footer{margin-top:16px;color:var(--muted);font-size:13px}
+    .mini{font-size:13px;color:var(--muted);margin-top:10px}
+    .icon{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(180deg,#f0fff6,#e6fbf0);color:#06603f}
+    .contact{background:#fff;padding:12px;border-radius:8px;border:1px solid #eef2f7}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.panel{order:2}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="icon" aria-hidden="true">🏆</div>
+        <div>
+          <div class="badge">Exercício de Conscientização</div>
+          <h1>Você clicou — resultado rápido e prático</h1>
+          <p class="lead">Este é um teste seguro. Ao clicar no link do e‑mail simulado você abriu um phishing de treinamento. Abaixo — orientações curtas e visuais para agir corretamente.</p>
+        </div>
+      </header>
+
+      <div class="grid" style="margin-top:18px">
+        <main>
+          <section class="panel">
+            <h3 style="margin:0 0 8px">Por que a mensagem enganou?</h3>
+            <div class="signals">
+              <div class="signal"><div style="font-size:18px">🔍</div><div><strong>Saudação genérica</strong><div class="mini">Usaram "Olá," em vez do seu nome — sinal comum de mensagens em massa.</div></div></div>
+              <div class="signal"><div style="font-size:18px">🔗</div><div><strong>Link dissonante</strong><div class="mini">O texto mostrava um domínio confiável, mas o destino real era outro.</div></div></div>
+              <div class="signal"><div style="font-size:18px">✍️</div><div><strong>Erros sutis e remetente estranho</strong><div class="mini">Grafia errada e endereço como <code>promo@lays-bonus.com</code>.</div></div></div>
+            </div>
+
+            <h4 style="margin-top:12px">Consequências possíveis (se fosse real)</h4>
+            <ul class="check">
+              <li>Roubo de credenciais (login/senha).</li>
+              <li>Instalação de malware via arquivo ou link.</li>
+              <li>Exposição de dados pessoais e financeiros.</li>
+            </ul>
+
+            <h4 style="margin-top:12px">Ações imediatas (faça agora)</h4>
+            <ol class="check">
+              <li><strong>Não</strong> insira senhas ou dados.</li>
+              <li>Reporte ao instrutor ou TI: <code>seguranca@exemplo.com</code>.</li>
+              <li>Se forneceu senha, <strong>troque-a</strong> imediatamente na conta afetada.</li>
+              <li>Marque o e‑mail como phishing e apague-o.</li>
+            </ol>
+
+            <div style="margin-top:12px">
+              <a class="btn" href="#" onclick="window.print();return false">Imprimir instruções</a>
+              <a class="btn secondary" href="#" onclick="document.getElementById('checklist').scrollIntoView();return false">Ver checklist</a>
+            </div>
+          </section>
+
+          <section id="checklist" class="panel" style="margin-top:12px">
+            <h4 style="margin-top:0">Checklist rápido para checar futuros e‑mails</h4>
+            <ul class="check">
+              <li>O remetente é do domínio oficial? (ex.: termina em <code>@empresa.com</code>)</li>
+              <li>O texto do link e o destino são iguais? (passe o mouse sobre o link)</li>
+              <li>Há erro de português ou promessa excessiva?</li>
+              <li>Existe pedido de senha, CPF ou dados de cartão? Desconfie.</li>
+            </ul>
+            <p class="mini">Dica: use o atalho <strong>Ctrl+F</strong> no e‑mail e procure por palavras como "urgente", "resgatar" ou "verificação".</p>
+          </section>
+        </main>
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</body>
+</html>
